@@ -66,6 +66,7 @@ section.imagem{
     color: white;
     box-shadow: inset 4px 4px 13px 0px rgba(0, 0, 0, 0.418);
     background-size: cover;
+    background-repeat: no-repeat;
     background-attachment: fixed;
 }
 
@@ -89,7 +90,6 @@ footer{
     background-color: black;
     color: white;
     text-align: center;
-    margin-top: 20px;
     padding: 10px;
     font-size: 18px;
 }
