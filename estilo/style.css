@@ -1,0 +1,95 @@
+@charset "utf-8";
+*{
+    margin: 0px;
+    padding: 0px;
+}
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+:root{
+    --font-destaque:"Open Sans", sans-serif;
+    --font-secundaria:"PT Serif", serif;
+    --font-padrao: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
+}
+
+html,body{
+    min-height: 100vh;
+    background-color: darkgray;
+    font-family: var(--font-padrao);
+    
+}
+header{
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-family: var(--font-secundaria);
+}   
+header > h1{
+    padding-top: 50px;
+    font-variant: small-caps;
+    font-size: 8vw;
+    font-family:var(--font-destaque);
+}
+header > p{
+    padding-bottom: 50px;
+}
+a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+a:hover{
+    text-decoration: underline;
+    color: red;
+}
+
+section{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+    font-size: 3.5vw;
+}
+section >p{
+    padding-bottom: 2em;
+}
+
+section.normal{
+    background-color: white;
+    color: black;
+}
+
+section.imagem{
+    background-color: rgba(0, 0, 0, 0.562);
+    color: white;
+    box-shadow: inset 4px 4px 13px 0px rgba(0, 0, 0, 0.418);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+section.imagem > p{
+    display: inline-block;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.363);
+}
+section#img01{
+    background-image: url(../imagens/background001.jpg);
+    background-position: right center;
+    
+}
+section#img02{
+    background-image: url(../imagens/background002.jpg);
+    background-position: right center;
+   
+}
+
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 18px;
+}
